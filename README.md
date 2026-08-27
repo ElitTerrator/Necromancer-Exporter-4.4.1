@@ -8,7 +8,7 @@ This plugin exports your Blockbench model as Java source files compatible with V
 Supports box UV, per-face UV scaling, and bone rotation.
 
 ## Installation
-1. Download `necromancer_exporter_4_4_1.js` from the [latest release](https://github.com/Elit-Terrator/Necromancer-Exporter-4.4.1/releases/latest/download/necromancer_exporter_4_4_1.js) or this repo.
+1. Download `necromancer_exporter_4_4_1.js` from the [latest release](https://github.com/ElitTerrator/Necromancer-Exporter-4.4.1/releases/tag/v1.0.0) or this repo.
 2. In Blockbench, go to **File > Plugins > Load Plugin from File**.
 3. Select the downloaded `.js` file.
 
