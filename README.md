@@ -1,3 +1,5 @@
+# TitleNecromancer Exporter 4.4.1
+
 This plugin exports your Blockbench model as Java source files compatible with Veil's Necromancer system. It generates:
 
 - A Skeleton class with bone hierarchy and positions
