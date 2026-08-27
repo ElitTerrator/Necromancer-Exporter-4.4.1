@@ -1,4 +1,4 @@
-package elit.magic.playerModelRenderer.test;
+package elit.example.entity;
 
 import foundry.veil.api.client.necromancer.render.Skin;
 

@@ -1,6 +1,6 @@
-package elit.magic.playerModelRenderer.test;
+package elit.example.entity;
 
-import elit.magic.Magic;
+import elit.example.Example;
 import foundry.veil.api.client.necromancer.animation.Animator;
 import foundry.veil.api.client.necromancer.render.NecromancerEntityRenderer;
 import foundry.veil.api.client.necromancer.render.NecromancerSkinEntityRenderLayer;
@@ -11,9 +11,8 @@ import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.util.Identifier;
 
 public class ModelTestRenderer extends NecromancerEntityRenderer<ModelTestEntity, ModelTestSkeleton> {
-    private static final Identifier RENDERTYPE = Magic.id("model_entity");
-    private static final Identifier TEXTURE_LOCATION = Magic.id("textures/entity/texture.png");
-
+    private static final Identifier RENDERTYPE = Example.id("model_entity");
+    private static final Identifier TEXTURE_LOCATION = Example.id("textures/entity/texture.png");
 
     public ModelTestRenderer(EntityRendererFactory.Context context) {
         super(context, 0.3F);
@@ -30,12 +29,7 @@ public class ModelTestRenderer extends NecromancerEntityRenderer<ModelTestEntity
     }
 
     @Override
-    public ModelTestSkeleton createSkeleton(ModelTestEntity gnomadMogulEntity) {
-        return new ModelTestSkeleton();
-    }
-
+    public ModelTestSkeleton createSkeleton(ModelTestEntity gnomadMogulEntity) { return new ModelTestSkeleton(); }
     @Override
-    public Animator<ModelTestEntity, ModelTestSkeleton> createAnimator(ModelTestEntity entity, ModelTestSkeleton Skeleton) {
-        return new ModelTestAnimator(entity, Skeleton);
-    }
+    public Animator<ModelTestEntity, ModelTestSkeleton> createAnimator(ModelTestEntity entity, ModelTestSkeleton Skeleton) { return new ModelTestAnimator(entity, Skeleton); }
 }
