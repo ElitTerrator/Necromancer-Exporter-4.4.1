@@ -19,18 +19,27 @@ Once installed, two new options appear under **File > Export**:
 ## How to use it
 You need to be very precise with the structure of your proyect:
 
+- When creating a Generic Model set `Default UV Mode` to `Box UV`
 - All groups and cubes should be inside a root folder
 - Each group will be consider a new Bone
 - Any groups inside another group will be linked in motion and rotation, *both in BlockBench and in Minecraft*
 - All cubes directly inside a group will be part of its Skin
 
-There are also some limitations:
+### This plugin allows to map smaller or bigger uv on cubes, for that:
 
-- Root-level cubes not inside any group are/aren't exported (whichever you settled on)
+- First, set all UV to `Box UV`
+- Then change the cubes you want to resize UVs to `Per-face UV`
+- Dont change the disposition of the squares just the size of all of them, this means that, when selecting all the squares, the top left corner of the selection should not have moved. If it moves, you can revert the changes by changing that cube UVs to `Box UV` again.
+- After making the size changes, do not change that cube's UVs to `Box UV` ever again, it will break it
+- After making the size changes, you cannot move the location of the cube's UVs
+- Making any of this changes might lead to broken UVs
+
+### There are also some limitations:
+
+- Cubes outside any group aren't exporte
 - No support for animations, only static bind pose
-- Per-face UV must follow box UV conventions or export may be inaccurate
+- Per-face UV must follow box UV conventions or export may be inaccurate, to avoid problems do not change the squares dispositions, just the position of the whole cube
 
 ## Credits
-- Built for use with [Veil](https://modrinth.com/mod/veil), a rendering framework for Fabric mods.
-- Uses Blockbench's [Plugin API](https://www.blockbench.net/wiki/docs/plugin-api) for model/group/cube data access.
+- Built for use with [Veil](https://modrinth.com/mod/veil), a rendering framework for Mods.
 - Created by Elit_Terrator.
