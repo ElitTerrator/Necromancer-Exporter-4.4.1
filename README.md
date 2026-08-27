@@ -24,4 +24,9 @@ You need to be very precise with the structure of your proyect:
 - Any groups inside another group will be linked in motion and rotation, *both in BlockBench and in Minecraft*
 - All cubes directly inside a group will be part of its Skin
 
+There are also some limitations:
+
+- Root-level cubes not inside any group are/aren't exported (whichever you settled on)
+- No support for animations, only static bind pose
+- Per-face UV must follow box UV conventions or export may be inaccurate
 
