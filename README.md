@@ -30,3 +30,7 @@ There are also some limitations:
 - No support for animations, only static bind pose
 - Per-face UV must follow box UV conventions or export may be inaccurate
 
+## Credits
+- Built for use with [Veil](https://modrinth.com/mod/veil), a rendering framework for Fabric mods.
+- Uses Blockbench's [Plugin API](https://www.blockbench.net/wiki/docs/plugin-api) for model/group/cube data access.
+- Created by Elit_Terrator.
